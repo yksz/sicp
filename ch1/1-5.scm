@@ -6,3 +6,5 @@
       y))
 
 (test 0 (p))
+; applicative-order evaluation => infinite loop
+; normal-order evaluation => not infinite loop
