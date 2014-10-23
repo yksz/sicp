@@ -3,5 +3,5 @@
 
 
 (require "../util/assert")
-(assert (= 2 (a-plus-abs-b 1 +1)) "(a-plus-abs-b 1 +1)")
-(assert (= 2 (a-plus-abs-b 1 -1)) "(a-plus-abs-b 1 -1)")
+(assert-eqv "(a-plus-abs-b 1 +1)" 2 (a-plus-abs-b 1 +1))
+(assert-eqv "(a-plus-abs-b 1 -1)" 2 (a-plus-abs-b 1 -1))

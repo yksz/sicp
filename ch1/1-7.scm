@@ -22,4 +22,4 @@
 
 
 (require "../util/assert")
-(assert-approximate 0.01 (sqrt 0.0001) 0.001 "(sqrt 0.0001)")
+(assert-approximate "(sqrt 0.0001)" 0.01 (sqrt 0.0001) 0.001)
