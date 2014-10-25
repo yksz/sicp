@@ -6,9 +6,9 @@
         ((= y 1) 2)
         (else (A (- x 1)
                  (A x (- y 1))))))
-(assert-eqv "(A 1 10)" 1024 (A 1 10))
-(assert-eqv "(A 2 4)" 65536 (A 2 4))
-(assert-eqv "(A 3 3)" 65536 (A 3 3))
+(assert-eqv "(A 1 10)"  1024 (A 1 10))
+(assert-eqv "(A 2 4)"  65536 (A 2 4))
+(assert-eqv "(A 3 3)"  65536 (A 3 3))
 
 (define (f n) (A 0 n)) ; 2n
 (assert-eqv "(f 0)" 0 (f 0))
@@ -23,7 +23,7 @@
 (assert-eqv "(g 3)" 8 (g 3))
 
 (define (h n) (A 2 n)) ; 2^(h(n-1)) (n>1)
-(assert-eqv "(h 0)" 0 (h 0))
-(assert-eqv "(h 1)" 2 (h 1))
-(assert-eqv "(h 2)" 4 (h 2))
+(assert-eqv "(h 0)"  0 (h 0))
+(assert-eqv "(h 1)"  2 (h 1))
+(assert-eqv "(h 2)"  4 (h 2))
 (assert-eqv "(h 3)" 16 (h 3))
