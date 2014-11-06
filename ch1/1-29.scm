@@ -20,7 +20,7 @@
           (else (* 2 (y k)))))
   (define (next x)
     (+ x 1))
-  (exact->inexact (* (/ h 3) (sum term 0 next n))))
+  (* (/ h 3) (sum term 0.0 next n)))
 
 (define (cube x)
   (* x x x))
@@ -28,5 +28,5 @@
 
 (require "../util/assert")
 (assert-approximate "(integral cube 0 1 0.01)" 0.25 (integral cube 0 1 0.01) 0.01)
-(assert-eqv "(simpson cube 0 1 100)"  0.25 (simpson cube 0 1 100))
-(assert-eqv "(simpson cube 0 1 1000)" 0.25 (simpson cube 0 1 1000))
+(assert-approximate "(simpson cube 0 1 100)"   0.25 (simpson cube 0 1 100)   0.001)
+(assert-approximate "(simpson cube 0 1 1000)"  0.25 (simpson cube 0 1 1000)  0.001)
