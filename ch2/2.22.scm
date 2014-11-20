@@ -1,4 +1,4 @@
-(define nil ())
+(define nil '())
 
 (define (square x) (* x x))
 
