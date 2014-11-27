@@ -1,4 +1,4 @@
-(define (assert expr msg)
+(define (assert msg expr)
   (if (not expr)
       (error "assert:" msg)))
 
