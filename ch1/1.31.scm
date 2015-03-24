@@ -22,5 +22,5 @@
   (* 4 (product term 2.0 next n)))
 
 
-(require "../util/assert")
+(load "../util/assert.scm")
 (assert-approximate "(pi 1000)" 3.141592 (pi 1000) 0.01)

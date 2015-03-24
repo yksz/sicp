@@ -14,7 +14,7 @@
   (lambda (f) (lambda (x) ((m f) ((n f) x)))))
 
 
-(require "../util/assert")
+(load "../util/assert.scm")
 (assert-eqv "(church->integer zero)" 0 (church->integer zero))
 (assert-eqv "(church->integer one)"  1 (church->integer one))
 (assert-eqv "(church->integer two)"  2 (church->integer two))

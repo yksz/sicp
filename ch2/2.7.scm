@@ -7,7 +7,7 @@
   (min (car i) (cdr i)))
 
 
-(require "../util/assert")
+(load "../util/assert.scm")
 (assert-eqv "(upper-bound (make-interval 1 2))" 2 (upper-bound (make-interval 1 2)))
 (assert-eqv "(upper-bound (make-interval 2 1))" 2 (upper-bound (make-interval 2 1)))
 (assert-eqv "(lower-bound (make-interval 1 2))" 1 (lower-bound (make-interval 1 2)))

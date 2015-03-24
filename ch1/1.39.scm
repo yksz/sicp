@@ -18,5 +18,5 @@
 (define pi 3.14159)
 
 
-(require "../util/assert")
+(load "../util/assert.scm")
 (assert-approximate "(tan-cf (/ pi 4) 10)" 1.0 (tan-cf (/ pi 4) 10) 0.0001)

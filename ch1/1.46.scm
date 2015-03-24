@@ -21,6 +21,6 @@
   ((iterative-improve close-enough? f) first-guess))
 
 
-(require "../util/assert")
+(load "../util/assert.scm")
 (assert-approximate "(sqrt 4)" 2.0 (sqrt 4) 0.001)
 (assert-approximate "(fixed-point cos 1.0)" 0.7390822985224023 (fixed-point cos 1.0) 0.00001)

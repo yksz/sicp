@@ -11,7 +11,7 @@
                  (- (upper-bound x) (lower-bound y))))
 
 
-(require "../util/assert")
+(load "../util/assert.scm")
 (define x (make-interval 8 4))
 (define y (make-interval 2 0))
 (assert-eqv "(upper-bound (sub-interval x y))" 8 (upper-bound (sub-interval x y)))

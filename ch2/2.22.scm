@@ -12,5 +12,5 @@
   (iter items nil))
 
 
-(require "../util/assert")
+(load "../util/assert.scm")
 (assert-equal "(square-list (list 1 2 3 4))" (list 1 4 9 16) (square-list (list 1 2 3 4)))

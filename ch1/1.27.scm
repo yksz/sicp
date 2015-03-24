@@ -18,7 +18,7 @@
   (* x x))
 
 
-(require "../util/assert")
+(load "../util/assert.scm")
 (assert-eqv "(fermat-test 561)"  #t (fermat-test 561))
 (assert-eqv "(fermat-test 1105)" #t (fermat-test 1105))
 (assert-eqv "(fermat-test 1729)" #t (fermat-test 1729))

@@ -8,7 +8,7 @@
                  (pascals-triangle (- n 1) k)))))
 
 
-(require "../util/assert")
+(load "../util/assert.scm")
 (assert-eqv "(pascals-triangle 1 1)" 1 (pascals-triangle 1 1))
 (assert-eqv "(pascals-triangle 2 1)" 1 (pascals-triangle 2 1))
 (assert-eqv "(pascals-triangle 2 2)" 1 (pascals-triangle 2 2))

@@ -14,7 +14,7 @@
           (accumulate op initial (cdr sequence)))))
 
 
-(require "../util/assert")
+(load "../util/assert.scm")
 (define x (cons (list 1 2) (list 3 4)))
 (assert-eqv "(count-leaves x)" 4 (count-leaves x))
 (assert-eqv "(count-leaves (list x x))" 8 (count-leaves (list x x)))

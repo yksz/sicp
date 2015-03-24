@@ -1,4 +1,4 @@
-(require "../util/assert")
+(load "../util/assert.scm")
 
 (define (A x y)
   (cond ((= y 0) 0)

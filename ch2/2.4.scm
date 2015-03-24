@@ -8,6 +8,6 @@
   (z (lambda (p q) q)))
 
 
-(require "../util/assert")
+(load "../util/assert.scm")
 (assert-eqv "(car (cons 1 2))" 1 (car (cons 1 2)))
 (assert-eqv "(cdr (cons 1 2))" 2 (cdr (cons 1 2)))

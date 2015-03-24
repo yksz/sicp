@@ -17,5 +17,5 @@
 (define gloden-ratio (/ (+ 1 (sqrt 5) 2)))
 
 
-(require "../util/assert")
+(load "../util/assert.scm")
 (assert-approximate "(golden-ratio)" (/ (+ 1 (sqrt 5)) 2) (golden-ratio) 0.00001)

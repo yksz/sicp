@@ -16,7 +16,7 @@
           (accumulate op initial (cdr sequence)))))
 
 
-(require "../util/assert")
+(load "../util/assert.scm")
 (define seq1 '(1 2 3))
 (define seq2 '(4 5 6))
 (define (square x) (* x x))

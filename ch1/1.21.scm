@@ -13,7 +13,7 @@
   (* x x))
 
 
-(require "../util/assert")
+(load "../util/assert.scm")
 (assert-eqv "(smallest-divisor 199)"    199 (smallest-divisor 199))
 (assert-eqv "(smallest-divisor 1999)"  1999 (smallest-divisor 1999))
 (assert-eqv "(smallest-divisor 19999)"    7 (smallest-divisor 19999))

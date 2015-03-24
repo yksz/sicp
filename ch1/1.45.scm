@@ -33,7 +33,7 @@
                  1.0)))
 
 
-(require "../util/assert")
+(load "../util/assert.scm")
 (assert-approximate "(root    4  2)" 2.0 (root    4  2) 0.00001)
 (assert-approximate "(root    8  3)" 2.0 (root    8  3) 0.00001)
 (assert-approximate "(root   16  4)" 2.0 (root   16  4) 0.00001)

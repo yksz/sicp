@@ -28,7 +28,7 @@
             (accumulate-n op init (map cdr seqs)))))
 
 
-(require "../util/assert")
+(load "../util/assert.scm")
 (define v '(1 2 3))
 (define w '(4 5 6))
 (define m '((1 2 3) (4 5 6) (7 8 9)))

@@ -1,4 +1,4 @@
-(require "../util/assert")
+(load "../util/assert.scm")
 (define (test-mobile)
   (define b1 (make-branch 2 1))
   (define m1 (make-mobile b1 b1))

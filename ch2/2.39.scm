@@ -1,4 +1,4 @@
-(require "../util/assert")
+(load "../util/assert.scm")
 
 (define nil '())
 

@@ -6,7 +6,7 @@
 (define (denom x) (cdr x))
 
 
-(require "../util/assert")
+(load "../util/assert.scm")
 (assert-eqv "(numer (make-rat  1  2))"  1 (numer (make-rat  1  2)))
 (assert-eqv "(denom (make-rat  1  2))"  2 (denom (make-rat  1  2)))
 (assert-eqv "(numer (make-rat -1  2))" -1 (numer (make-rat -1  2)))

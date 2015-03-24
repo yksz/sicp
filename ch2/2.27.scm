@@ -6,7 +6,7 @@
           (append (deep-reverse (cdr items)) (list (car items))))))
 
 
-(require "../util/assert")
+(load "../util/assert.scm")
 (define x (list (list 1 2) (list 3 4)))
 (assert-equal "x" '((1 2) (3 4)) x)
 (assert-equal "(reverse x)" '((3 4) (1 2)) (reverse x))

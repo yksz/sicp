@@ -25,5 +25,5 @@
 (define golden-ratio (/ (+ 1 (sqrt 5)) 2))
 
 
-(require "../util/assert")
+(load "../util/assert.scm")
 (assert-approximate "(f 10)" (/ 1 golden-ratio) (f 10) 0.0001)

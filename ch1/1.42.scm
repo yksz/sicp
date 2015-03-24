@@ -6,5 +6,5 @@
 (define (inc x) (+ x 1))
 
 
-(require "../util/assert")
+(load "../util/assert.scm")
 (assert-eqv "((compose square inc) 6)" 49 ((compose square inc) 6))

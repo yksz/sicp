@@ -18,5 +18,5 @@
      2))
 
 
-(require "../util/assert")
+(load "../util/assert.scm")
 (assert-approximate "(e 10)" 2.71828 (e 10) 0.0001)

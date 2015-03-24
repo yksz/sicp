@@ -21,5 +21,5 @@
   (sqrt-iter 1.0 0.0 x))
 
 
-(require "../util/assert")
+(load "../util/assert.scm")
 (assert-approximate "(sqrt 0.0001)" 0.01 (sqrt 0.0001) 0.001)

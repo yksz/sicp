@@ -1,4 +1,4 @@
-(require "../util/assert")
+(load "../util/assert.scm")
 
 (define items1 '(1 3 (5 7) 9))
 (assert-eqv "items1" 7 (car (cdr (car (cdr (cdr items1))))))

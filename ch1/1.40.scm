@@ -32,5 +32,5 @@
        c)))
 
 
-(require "../util/assert")
+(load "../util/assert.scm")
 (assert-eqv "(newtons-method (cubic -1 -1 1) 1)" 1.0 (newtons-method (cubic -1 -1 1) 1))

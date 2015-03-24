@@ -1,4 +1,4 @@
-(require "../util/assert")
+(load "../util/assert.scm")
 
 (define (make-point x y) (cons x y))
 (define (x-point p) (car p))

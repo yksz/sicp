@@ -18,6 +18,6 @@
   (null? coin-values))
 
 
-(require "../util/assert")
+(load "../util/assert.scm")
 (define us-coins (list 50 25 10 5 1))
 (assert-eqv "(cc 100 us-coins)" 292 (cc 100 us-coins))

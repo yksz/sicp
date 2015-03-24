@@ -11,5 +11,5 @@
 (define (square x) (* x x))
 
 
-(require "../util/assert")
+(load "../util/assert.scm")
 (assert-eqv "((repeated square 2) 5)" 625 ((repeated square 2) 5))

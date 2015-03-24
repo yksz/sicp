@@ -17,7 +17,7 @@
   (cdr-iter z 0))
 
 
-(require "../util/assert")
+(load "../util/assert.scm")
 (assert-eqv "(car (cons 1 2))" 1 (car (cons 1 2)))
 (assert-eqv "(cdr (cons 1 2))" 2 (cdr (cons 1 2)))
 (assert-eqv "(car 108)" 2 (car 108))

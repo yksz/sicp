@@ -21,5 +21,5 @@
   (cbrt-iter 1.0 0.0 x))
 
 
-(require "../util/assert")
+(load "../util/assert.scm")
 (assert-approximate "(cbrt 0.001)" 0.1 (cbrt 0.001) 0.001)

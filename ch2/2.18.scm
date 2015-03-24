@@ -4,5 +4,5 @@
       (append (reverse (cdr items)) (list (car items)))))
 
 
-(require "../util/assert")
+(load "../util/assert.scm")
 (assert-equal "(reverse (list 1 4 9 16 25))" (list 25 16 9 4 1) (reverse (list 1 4 9 16 25)))

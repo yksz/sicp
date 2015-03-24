@@ -28,6 +28,6 @@
 (define (inc x) (+ x 1))
 
 
-(require "../util/assert")
+(load "../util/assert.scm")
 (assert-eqv "(sum-of-square-of-prime 2 10)"  87 (sum-of-square-of-prime 2 10))
 (assert-eqv "(product-relatively-prime 10)" 189 (product-relatively-prime 10))

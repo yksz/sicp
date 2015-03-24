@@ -11,6 +11,6 @@
           (accumulate op initial (cdr sequence)))))
 
 
-(require "../util/assert")
+(load "../util/assert.scm")
 ;; 1 + 3x + 5x^3 + x^5 at x = 2
 (assert-eqv "(horner-eval 2 (list 1 3 0 5 0 1)" 79 (horner-eval 2 (list 1 3 0 5 0 1)))

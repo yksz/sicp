@@ -26,7 +26,7 @@
   (* x x x))
 
 
-(require "../util/assert")
+(load "../util/assert.scm")
 (assert-approximate "(integral cube 0 1 0.01)" 0.25 (integral cube 0 1 0.01) 0.01)
 (assert-approximate "(simpson cube 0 1 100)"   0.25 (simpson cube 0 1 100)   0.001)
 (assert-approximate "(simpson cube 0 1 1000)"  0.25 (simpson cube 0 1 1000)  0.001)

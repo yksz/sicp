@@ -9,7 +9,7 @@
   (* x x))
 
 
-(require "../util/assert")
+(load "../util/assert.scm")
 (assert-eqv "(f 1 2 3)" 13 (f 1 2 3))
 (assert-eqv "(f 1 3 2)" 13 (f 1 3 2))
 (assert-eqv "(f 2 1 3)" 13 (f 2 1 3))

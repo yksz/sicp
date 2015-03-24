@@ -16,7 +16,7 @@
                         (- count 1)))))
 
 
-(require "../util/assert")
+(load "../util/assert.scm")
 (assert-eqv "(fib 1)"  1 (fib 1))
 (assert-eqv "(fib 2)"  1 (fib 2))
 (assert-eqv "(fib 3)"  2 (fib 3))

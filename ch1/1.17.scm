@@ -13,7 +13,7 @@
   (/ n 2))
 
 
-(require "../util/assert")
+(load "../util/assert.scm")
 (assert-eqv "(fast-* 1 2)"  2 (fast-* 1 2))
 (assert-eqv "(fast-* 3 4)" 12 (fast-* 3 4))
 (assert-eqv "(fast-* 5 6)" 30 (fast-* 5 6))

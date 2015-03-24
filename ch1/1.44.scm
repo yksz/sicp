@@ -22,6 +22,6 @@
 (define (inc x) (+ x 1))
 
 
-(require "../util/assert")
+(load "../util/assert.scm")
 (assert-eqv "((smooth inc) 0)" 1.0 ((smooth inc) 0))
 (assert-eqv "((n-fold-smooth inc 5) 0)" 1 ((n-fold-smooth inc 5) 0))

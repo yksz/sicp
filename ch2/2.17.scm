@@ -4,5 +4,5 @@
       (last-pair (cdr items))))
 
 
-(require "../util/assert")
+(load "../util/assert.scm")
 (assert-equal "(last-pair (list 23 72 149 34))" (list 34) (last-pair (list 23 72 149 34)))

@@ -12,7 +12,7 @@
   (* x x))
 
 
-(require "../util/assert")
+(load "../util/assert.scm")
 (assert-eqv "(fast-expt 2 1)"     2 (fast-expt 2 1))
 (assert-eqv "(fast-expt 2 2)"     4 (fast-expt 2 2))
 (assert-eqv "(fast-expt 2 4)"    16 (fast-expt 2 4))

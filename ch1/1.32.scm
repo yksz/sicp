@@ -26,6 +26,6 @@
   (+ x 1))
 
 
-(require "../util/assert")
+(load "../util/assert.scm")
 (assert-eqv "(sum cube 0 next 3)"      36 (sum cube 0 inc 3))
 (assert-eqv "(product cube 1 next 3)" 216 (product cube 1 inc 3))
